@@ -1,0 +1,17 @@
+<% if current_user %>
+
+    <% if current_user.role == "" %>
+
+          <li><%= link_to "", profile_path %> </li>
+          <li> <%= link_to "", search_path %></li>
+
+    <% elsif current_user.role == "" %>
+
+        <li><%= link_to "", designer_profile_path %></li>
+
+    <% end %>
+
+<% else %>
+
+    <%=   %>
+<% end %>
